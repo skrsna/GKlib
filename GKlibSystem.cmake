@@ -29,7 +29,7 @@ endif(CYGWIN)
 if(CMAKE_COMPILER_IS_GNUCC)
 # GCC opts.
   set(GKlib_COPTIONS "${GKlib_COPTIONS} -std=c99 -fno-strict-aliasing")
-  set(GKlib_COPTIONS "${GKlib_COPTIONS} -march=native")
+  set(GKlib_COPTIONS "${GKlib_COPTIONS} -mcpu=native")
   if(NOT MINGW)
       set(GKlib_COPTIONS "${GKlib_COPTIONS} -fPIC")
   endif(NOT MINGW)
